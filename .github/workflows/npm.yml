@@ -23,7 +23,7 @@ jobs:
             - name: Setup Node.js
               uses: actions/setup-node@v6
               with:
-                  node-version: '22.14'
+                  node-version: 24
                   registry-url: https://registry.npmjs.org/
                   package-manager-cache: false
             - name: Install OIDC-compatible npm
@@ -65,7 +65,7 @@ jobs:
                     npm publish "${{ steps.package.outputs.tarball }}" --access public --provenance
                   fi
             - name: Create GitHub Release
-              uses: softprops/action-gh-release@v2.2.1
+              uses: softprops/action-gh-release@v3
               with:
                   files: ${{ steps.package.outputs.tarball }}
                   generate_release_notes: true
