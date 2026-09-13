@@ -1,6 +1,6 @@
 # offline-ts
 
-[![npm version](https://img.shields.io/npm/v/offline-ts.svg)](https://www.npmjs.com/package/offline-ts)
+[![npm version](https://img.shields.io/npm/v/@vilucloud/offline-ts.svg)](https://www.npmjs.com/package/@vilucloud/offline-ts)
 [![CI](https://github.com/vilu85/offline-ts/actions/workflows/nodejs.yml/badge.svg?branch=master)](https://github.com/vilu85/offline-ts/actions/workflows/nodejs.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
@@ -25,7 +25,7 @@ Try the [interactive offline-ts demo](https://vilu85.github.io/offline-ts/) to r
 ## Installation
 
 ```bash
-npm install offline-ts
+npm install @vilucloud/offline-ts
 ```
 
 This is a browser library and requires the DOM and `XMLHttpRequest` APIs.
@@ -33,7 +33,7 @@ This is a browser library and requires the DOM and `XMLHttpRequest` APIs.
 ## Quick start
 
 ```ts
-import Offline from 'offline-ts';
+import Offline from '@vilucloud/offline-ts';
 
 const offline = new Offline({
 	checkOnLoad: true,
@@ -72,7 +72,7 @@ Create the checker in an effect, copy its connection state into React state, and
 
 ```tsx
 import { useEffect, useState } from 'react';
-import Offline, { type OfflineState } from 'offline-ts';
+import Offline, { type OfflineState } from '@vilucloud/offline-ts';
 
 export function ConnectionStatus() {
 	const [connection, setConnection] = useState<OfflineState>('up');
@@ -300,7 +300,7 @@ Creates and initializes an offline checker.
 The package also exports the base `OfflineCheck` class as a named export:
 
 ```ts
-import Offline, { OfflineCheck } from 'offline-ts';
+import Offline, { OfflineCheck } from '@vilucloud/offline-ts';
 ```
 
 ### Properties
@@ -337,7 +337,7 @@ import type {
 	ReconnectController,
 	ReconnectOptions,
 	XHROpenDetails,
-} from 'offline-ts';
+} from '@vilucloud/offline-ts';
 ```
 
 ## Script-tag usage
