@@ -58,7 +58,7 @@
 		"not dead"
 	],
 	"devDependencies": {
-		"@babel/core": "^7.29.7",
+		"@babel/core": "^8.0.1",
 		"@babel/runtime": "^8.0.5",
 		"@eslint/js": "^10.0.1",
 		"@testing-library/jest-dom": "^7.0.1",
